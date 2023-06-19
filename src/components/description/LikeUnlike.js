@@ -1,7 +1,10 @@
-import like from "../../assets/like.svg";
-import unlike from "../../assets/unlike.svg";
+import { useSelector } from 'react-redux'
+import like from '../../assets/like.svg'
+import unlike from '../../assets/unlike.svg'
 
 const LikeUnlike = () => {
+  const {videos} = useSelector((state) => state.videos)
+  console.log(videos)
   return (
     <>
       <div className="flex gap-10 w-48">
@@ -19,7 +22,7 @@ const LikeUnlike = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default LikeUnlike;
+export default LikeUnlike
