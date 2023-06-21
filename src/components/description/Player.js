@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Player = ({ link, title }) => {
   return (
@@ -10,10 +10,9 @@ const Player = ({ link, title }) => {
         title={title}
         frameBorder=""
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullscreen
-      ></iframe>
+        allowFullScreen></iframe>
     </>
-  );
-};
+  )
+}
 
-export default Player;
+export default Player
